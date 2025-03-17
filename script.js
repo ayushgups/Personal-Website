@@ -37,3 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     typeEffect(); // Start typing effect
 });
+
+
+

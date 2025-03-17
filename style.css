@@ -13,7 +13,7 @@ body {
     Helvetica,
     sans-serif;
   color:  #fff;
-  padding-bottom: 3098px;
+  padding-bottom: 100px;
   overflow-x: hidden;
 }
 
@@ -24,15 +24,26 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 /* Navigation */
 .navigation {
+  position: fixed;
   display: flex;
   flex-direction: column;
-  width: 945px;
+  width: 430px; /*changes rectangle size */
+  height: 50px; /* Adjust as needed */
   max-width: 100%;
   margin-left: 510px;
   font-size: 15px;
   letter-spacing: 0.63px;
+  z-index: 1000;
+  background-color: #202020;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav-links {
@@ -351,7 +362,7 @@ body {
 /* About Section */
 
 .about-section {
-  margin-top: 250px;
+  margin-top: 260px;
 }
 
 .section-title {
@@ -609,3 +620,63 @@ body {
   }
 }
 
+/* Contact Section */
+
+.contact-section {
+  margin-top: 80px; /* Adjust this value as needed */
+}
+
+
+
+.contact-text {
+  text-align: left;
+  margin-left: 150px;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #202020;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  list-style: none; /* Removes default bullet points */
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #2a77bd;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e5b8f;
+}

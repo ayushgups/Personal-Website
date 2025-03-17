@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400; 
+    font-display: swap;
+    src: url('./fonts/Poppins-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('./fonts/Poppins-SemiBold.woff2') format('woff2');
+}
+
+body {
+    background-color: #1A1919;
+}
+
+.centeredScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminalHeader {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 33px;
+    color: #ffffff;
+}
+
+.expHead {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    max-width: 1180px;
+}
+
+.description {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 27px;
+    color: #ffffff;
+    max-width: 1180px;
+}
+
+.date {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 10px;
+    color: #403F3F;
+    text-align: center;
+}
+
+.buttoncontainers {
+    position: relative;
+    display: inline-block;
+}
+
+.textButton {
+    font-family: "Poppins";
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 28px;
+    max-width: 200px;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textButton:hover {
+    text-shadow: 2px 2px 4px rgba(37, 37, 37, 0.5);
+}
+
+.textButton:active {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.introduction {
+    font-family: "Poppins";
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 24px;
+    max-width: 500px;
+    position: relative;
+    left: 425px;
+}
+
+.image-button {
+    width: 75px;
+    transition: transform 0.1s;
+}
+
+.image-button:hover {
+    transform: scale(1.1);
+}
+  

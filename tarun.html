@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarun Shah's Personal Website</title>
+    <link href="tarun.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="Name" style="position: absolute; top: 42px; left: 100px; z-index: 1;"> Tarun Shah</h1>
+        <img src="./images/Ellipse 2.png" height="192" weight="192" style="position: absolute; top: 30px; left: 30px; z-index: 0;"/>
+        <a href="https://www.linkedin.com/in/tarun-shah-2654a21b4/"><img src="./images/linkedin.svg" alt="LinkedIn" class="image-button" style="position:absolute; top: 90px; right: 600px;"></a>
+        <a href="https://github.com/tshah3500"><img src="./images/github.svg" alt="GitHub" class="image-button" style="position:absolute; top: 90px; right: 475px;"></a>
+        <a href="https://www.instagram.com/tarun._shah/"><img src="./images/instagram.svg" alt="Instagram" class="image-button" style="position:absolute; top: 90px; right: 350px;"></a>
+        <a href="mailto:tarunshah@berkeley.edu"><img src="./images/gmail.svg" alt="Gmail" class="image-button" style="position:absolute; top: 90px; right: 225px;"></a>
+        <a href="./documents/Tarun Shah Resume.pdf"><img src="./images/resume.svg" alt="Resume" class="image-button" style="position:absolute; top: 90px; right: 100px;"></a>
+    </header>
+    <section>
+        <img src="./images/Headshot.png" style="position: relative; top: 270px; left: 100px; width: 300px;"> 
+        <p class="introduction">Hi! I&apos;m a student studying Data Science and Applied Math at UC Berkeley. My professional interests are Machine Learning, Data Analysis, and Software Engineering.</p>
+        <div id="prevExp" style="position: absolute; top: 265px; right: 300px;">
+            <img src="./images/Ellipse 3.png">
+            <p id="prevExpText" class="textButton">Previous Experience</p>
+        </div>
+        <script>
+            document.getElementById("prevExpText").addEventListener("click", function() {
+                document.getElementById("terminal").scrollIntoView({ behavior: "smooth" });
+            });
+        </script>
+        <div id="projects" style="position: absolute; top: 450px; right: 75px">
+            <img src="./images/Ellipse 4.png">
+            <p id="projectsText" class="textButton" style="top: 25%;">Research & Projects</p>
+        </div>
+        <script>
+            document.getElementById("projectsText").addEventListener("click", function() {
+                document.getElementById("vscode").scrollIntoView({ behavior: "smooth" });
+            });
+        </script>
+        <div id="abtMe" style="position: absolute; top: 510px; right: 375px">
+            <img src="./images/Ellipse 5.png">
+            <p id="abtMeText" class="textButton" style="top: 36%; left: 47%;">More<br>About Me</p>
+        </div>
+        <script>
+            document.getElementById("abtMeText").addEventListener("click", function() {
+                document.getElementById("notes").scrollIntoView({ behavior: "smooth" });
+            });
+        </script>
+    </section>
+    <main style="position: relative; width: 100vw; height: 100vh; display: grid; place-items: center;">
+        <section id="terminal" style="position: absolute; top: 150px;">
+            <div style="width: 1200px; height: 730px; background: black; border-radius: 20px; border: 3px white solid;">
+                <img src="./images/Export Bar (1).png" style="position: absolute; top: 22px; left:20px; z-index: 1;">
+                <div style="position: absolute; top: 75px; width: 1200px; height: 0.1px; background: black; border: 1.5px white solid;"></div>
+                <p class="terminalHeader" style="position: absolute; top: 55px; left: 20px; z-index: 2;">tarunshah@Personal-Website ~ % Experience</p>
+                <p class="expHead" style="position: absolute; top: 125px; left: 20px;">Computer Vision Intern - Flawless AI</p>
+                <p class="expHead" style="position: absolute; top: 125px; right: 20px;">9/24 – 1/25</p>
+                <p class="description" style="position: absolute; top: 175px; left: 20px;">Implemented a YOLO-based computer vision pipeline to isolate frames from videos, identify facial hair regions, and classify relative size & lighting of the region.</p>
+                <p class="expHead" style="position: absolute; top: 300px; left: 20px;">Data Science Intern - Actualize Solutions Group</p>
+                <p class="expHead" style="position: absolute; top: 300px; right: 20px;">5/24 - 8/24</p>
+                <p class="description" style="position: absolute; top: 350px; left: 20px;">Conducted large-scale basket analysis covering 200,000+ products and 2,800,000+ transactions to design a Storage Management Strategy that optimized packaging and shipping efficiency for a nationwide parts distributor.</p>
+                <p class="expHead" style="position: absolute; top: 515px; left: 20px;">Data Engineering Intern - Sustainably.ai</p>
+                <p class="expHead" style="position: absolute; top: 515px; right: 20px;">6/22 - 8/22</p>
+                <p class="description" style="position: absolute; top: 565px; left: 20px;">Built an image classification pipeline deployed using AWS Lambda that processed thousands of ESG documents, extracted critical tabular information, and used Databricks NLP to rank ESG performance based on the output data.</p>
+            </div>
+        </section>
+        <section id="vscode" style="position: absolute; top: 1030px">
+            <div style="width: 1200px; height: 915px; z-index: 0; background: #0E3E59; border-radius: 20px; border: 3px white solid;">
+                <img src="./images/Export Bar (1).png" style="position: absolute; top: 22px; z-index: 2; left:20px">
+                <img src="./images/Tab.svg" style="position: absolute; left: 175px; z-index: 2; height:75px">
+                <div style="position: absolute; width: 1200px; height: 75px; z-index: 1; border-radius: 20px 20px 0 0; background: #124D6F;"></div>
+                <p class="expHead" style="position: absolute; top: 60px; left: 20px;">Researcher - Inspirit AI</p>
+                <p class="expHead" style="position: absolute; top: 60px; right: 20px;">9/22 - 8/23</p>
+                <p class="description" style="position: absolute; top: 115px; left: 20px;">Investigated undercounts of Limited English Proficient (LEP) populations in the Census using linear regression algorithms modeled on data from the Civil Rights Data Collection. Used the results to identify key states with disproportionate undercounts and noted systemic biases within school datasets.</p>
+                <a href="https://www.jsr.org/hs/index.php/path/article/view/4662" class="description" style="text-decoration: underline; position: absolute; top: 310px; right: 225px;">Published Findings</a>
+                <a href="https://github.com/tshah3500/Exposing-Undercounts-in-the-Census-through-Regression-Modeling/blob/main/Exposing%20Undercounts%20in%20the%20Census%20through%20Regression%20Modeling%20Python%20Notebook.ipynb" class="description" style="text-decoration: underline; position: absolute; top: 310px; right: 40px;">GitHub Link</a>
+                <p class="expHead" style="position: absolute; top: 350px; left: 20px;">1st Place Contestant at Berkeley’s Datathon for Social Good</p>
+                <p class="expHead" style="position: absolute; top: 350px; right: 20px;">11/24</p>
+                <p class="description" style="position: absolute; top: 405px; left: 20px; max-width: 1160px">Competed against 130+ students to find a data-driven solution for reassigning attendance areas for San Francisco Schools. Constructed a linear programming model that assigned block zones to school districts by minimizing community distance, disparities in income & ethnic diversity, and imbalances in attendance.</p>
+                <a href="https://github.com/tshah3500/UC-Berkeley-2024-Datathon-For-Social-Good-Submission/blob/main/SFUSD%20Project%20Notebook.ipynb" class="description" style="text-decoration: underline; position: absolute; top: 600px; right: 40px;">GitHub Link</a>
+                <p class="expHead" style="position: absolute; top: 640px; left: 20px;">Fentanyl Poisoning Awareness Project</p>
+                <p class="expHead" style="position: absolute; top: 640px; right: 20px;">8/22-5/24</p>
+                <p class="description" style="position: absolute; top: 695px; left: 20px;">Collaborated with the Drug Enforcement Administration (DEA) on a research project analyzing data from the Cook County Medical Examiner’s Office to investigate the impact of fentanyl overdoses on local communities.</p>
+                <a href="https://sites.google.com/cps.edu/fentanylawareness/data-exploration" class="description" style="text-decoration: underline; position: absolute; top: 855px; right: 40px;">Findings</a>
+            </div>
+        </section>
+        <section id="notes" style="position: absolute; top: 2095px">
+            <div style="width: 1206px; height: 800px; z-index: 0; background: #ffff; border-radius: 20px;">
+                <img src="./images/Export Bar (1).png" style="position: absolute; z-index: 2; top: 22px; left:20px">
+                <div style="position: absolute; width: 1206px; height: 75px; z-index: 1; border-radius: 20px 20px 0 0; background: #FFF476;"></div>
+                <p class="date" style="position: absolute; left: 510px; top: 80px;">Last Updated: March 10, 2025 at 5:00pm</p>
+                <p class="expHead" style="position: absolute; left: 20px; top: 83px; z-index: 2; max-width: 700px; color: #403F3F">More About Me!</p>
+                <p class="description" style="position: absolute; left: 20px; top: 140px; max-width: 750px; color: #403F3F">Before moving to Berkeley, I lived in Chicago, IL and went to high school at Lane Tech. Every year, my friends and I got to Lollapolooza, which is by far the best Chicago music festival. (And yes, Deep Dish Pizza is the best pizza there is).<br><br>I have a puppy named Charlie who’s around a year and a half old. She’s a toy poodle, so she weighs only 7 lbs, but she’s got plenty of energy!<br><br>In my free time, I love to read, write, make pottery, work out, watch movies, and grab food with my friends. My favorite books are Dune, a Storm of Swords, and Catch-22. My favorite movies are Goodfellas, Dune, and The Wind Rises.</p>
+                <img src="./images/Fun Photos.svg" style="position: absolute; right: 40px; top: 85px; height: 725px">
+            </div>
+        </section>
+        <div style="position:absolute; top: 2895px; width: 1px; height: 100px;"></div>
+    </main>
+</body>
+</html>
